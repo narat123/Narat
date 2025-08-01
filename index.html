@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narat </title>
+    <meta name="description" content="Download best modded APKs for games & apps. Stumble Guys, 8 Ball Pool, Brawl Stars mods with unlocked features, unlimited money, no ads.">
+    <meta name="keywords" content="mod apk, best mod apks, game hacks, unlocked apps, stumble guys mod, 8 ball pool hack, premium apk download">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4e73ff;  /* Softer blue */
+            --secondary: #6c5ce7; /* Pleasant purple */
+            --accent: #00cec9;   /* Teal accent */
+            --dark: #1a1a2e;     /* Dark navy background */
+            --light: #f1f2f6;    /* Light text/accents */
+        }
+
+        body {
+            background: var(--dark);
+            font-family: 'Poppins', sans-serif;
+            color: var(--light);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 30px 0;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+
+        .brand-subtitle {
+            display: block;
+            font-size: 1rem;
+            margin-top: 5px;
+            color: var(--light);
+            opacity: 0.8;
+            letter-spacing: 1px;
+        }
+
+        input {
+            width: min(90%, 600px);
+            padding: 15px 25px;
+            margin: 20px auto;
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 50px;
+            font-size: 1.1em;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .app-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .app-card {
+            background: rgba(30, 30, 46, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(78, 115, 255, 0.2);
+            border-color: rgba(78, 115, 255, 0.3);
+        }
+
+        .image-container {
+            position: relative;
+            padding: 5px;
+            background: rgba(40, 40, 60, 0.5);
+            border-radius: 25px;
+            margin: 0 auto 20px;
+            width: fit-content;
+        }
+
+        .mod-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--accent);
+            color: #1a1a2e;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .app-card img {
+            width: 180px;
+            height: 180px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h3 {
+            margin: 15px 0;
+            font-size: 1.6em;
+            background: linear-gradient(135deg, var(--primary) 30%, var(--accent) 70%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+
+        .app-features {
+            margin: 15px 0;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        .feature-item {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .feature-item i {
+            color: var(--accent);
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+
+        .platform-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .platform-icons i {
+            color: var(--light);
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .platform-icons i:hover {
+            opacity: 1;
+        }
+
+        .rating {
+            margin: 10px 0;
+        }
+
+        .rating-stars {
+            color: #fdcb6e;
+        }
+
+        .install-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 14px 30px;
+            border-radius: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px auto 0;
+            width: fit-content;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(78, 115, 255, 0.3);
+        }
+
+        .install-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(78, 115, 255, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .app-container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+<body>
+    <h1>📲 Narat 
+        <span class="brand-subtitle">Games, Apps & Tools</span>
+    </h1>
+    <input type="text" placeholder="🔍 Search Modded App or Game..." />
+
+    <div class="app-container">
+       
+        <div class="app-card">
+            <div class="image-container">
+                <span class="mod-badge">Pro</span>
+                <img src="https://i.imgur.com/YeLfI0F.png" alt="ESign"/>
+            </div>
+            <h3>Fc Mobile 25</h3>
+            <div class="app-features">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> Free
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> 
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+             
+            </div>
+            
+            <div class="rating">
+                <div class="rating-stars">
+                    
+                </div>
+                
+            </div>
+            <a href="https://i.loadly.io/KDxT6fCO" class="install-btn">
+                <i class="fas fa-download"></i> INSTALL NOW
+            </a>
+        </div>
+
+        <!-- 8 Ball Pool -->
+        <div class="app-card">
+            <div class="image-container">
+                <span class="mod-badge">CO🔴</span>
+                <img src="https://i.imgur.com/YeLfI0F.png" alt="8 Ball Pool Mod APK" />
+            </div>
+            <h3>Certificate </h3>
+            <div class="app-features">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle">Free</i>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle">Pw:1</i> 
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle">pro</i> 
+                </div>
+            </div>
+
+            <a href="https://raw.githubusercontent.com/Narat1111/Narat-online-/archive/refs/heads/Narat-mod.zip" class="install-btn">
+                <i class="fas fa-download"></i> INSTALL NOW
+            </a>
+        </div>
+        
+ <!-- 8 Ball Pool -->
+        <div class="app-card">
+            <div class="image-container">
+                <span class="mod-badge">TOLS</span>
+                <img src="https://i.imgur.com/2fRh2WQ.png" alt="8 Ball Pool Mod APK" />
+            </div>
+            <h3> Sign IPA</h3>
+            <div class="app-features">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> ipa installer
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> ios
+                </div>
+                
+            </div>
+
+            <a href="https://sign.ipasign.cc" class="install-btn">
+                <i class="fas fa-download"></i> Auto INSTALL
+            </a>
+        </div>
+              <!-- 8 Ball Pool -->
+        <div class="app-card">
+            <div class="image-container">
+                <span class="mod-badge">MOD</span>
+                <img src="https://i.postimg.cc/cCVsx1r5/mobile-legends-2-w9f3-1200.webp" alt="8 Ball Pool Mod APK" />
+            </div>
+            <h3>MLBB MOD </h3>
+            <div class="app-features">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> Mod Menu
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> Unlimited Gems Conis
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> Ios & Android
+                </div>
+            </div>
+
+            <a href="https://down-fastpro.blogspot.com/" class="install-btn">
+                <i class="fas fa-download"></i> INSTALL NOW
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>
